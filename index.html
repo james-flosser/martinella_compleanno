@@ -49,7 +49,6 @@
       </div>
       <div class="card board-wrap"><div id="board" role="grid"></div></div>
       <div class="actions">
-        <button class="btn btn-ghost" id="checkBtn" type="button">Verifica</button>
         <button class="btn btn-ghost" id="hintBtn" type="button">Rivela una lettera</button>
         <button class="btn btn-ghost" id="resetBtn" type="button">Ricomincia</button>
       </div>
@@ -70,7 +69,7 @@
     </aside>
   </main>
 
-  <footer>Con tutto il cuore · Buon compleanno</footer>
+  <footer>Buon compleanno alla mia bellissima Pitufina!</footer>
 </div>
 
 <!-- Premio finale -->
@@ -78,9 +77,22 @@
   <div class="reward-card">
     <p class="eyebrow">Missione compiuta</p>
     <h3 id="rewardTitle">Hai scoperto il tuo regalo!</h3>
+    <p class="reward-lead" id="rewardLead"></p>
     <div class="badge" id="rewardBadge">TERME</div>
     <p id="rewardText">Prepara costume e accappatoio: ti aspetta una giornata di totale relax alle Terme, tutta per te.</p>
-    <button class="btn btn-navy" id="closeReward" type="button">Rivedi lo schema</button>
+    <div class="reward-actions">
+      <button class="btn btn-gold" id="whereBtn" type="button">Scopri dove</button>
+      <button class="btn btn-navy" id="closeReward" type="button">Rivedi lo schema</button>
+    </div>
+  </div>
+</div>
+
+<!-- Popup "Rivela una lettera" -->
+<div id="noHint" class="modal" role="dialog" aria-modal="true" aria-labelledby="noHintText">
+  <div class="modal-card">
+    <p class="eyebrow">Niente scorciatoie</p>
+    <p id="noHintText" class="modal-text"></p>
+    <button class="btn btn-navy" id="noHintClose" type="button">Ci riprovo</button>
   </div>
 </div>
 

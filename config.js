@@ -20,8 +20,19 @@ var CONFIG = {
   parolaSegreta: "TERME",
 
   // Messaggio mostrato quando il cruciverba e' completato
-  messaggioPremio:
-    "Prepara costume e accappatoio: ti aspetta una giornata di totale relax alle Terme, tutta per te.",
+  // (opzionale: sotto la parola segreta. Lascia "" per non mostrare nulla)
+  messaggioPremio: "",
+
+  // Messaggio del popup che compare premendo "Rivela una lettera"
+  messaggioNoLettera: "Non puoi rivelare nessuna lettera, questo non è un giochetto di LinkedIn!",
+
+  // "SCOPRI DOVE": nel popup finale, "testo" compare PRIMA della parola segreta
+  // (es. "...andiamo alle" + TERME). Il pulsante "Scopri dove" apre "link" in una nuova scheda.
+  // Se "link" e' vuoto, il pulsante non viene mostrato.
+  scopriDove: {
+    testo: "Prepara il costume perchè questo sabato andiamo alle",
+    link: "https://www.aquardens.it/it"
+  },
 
   // DEFINIZIONI: a sinistra la parola (in MAIUSCOLO, non cambiarla),
   // a destra la definizione che appare nel cruciverba. Modifica solo il testo a destra.
@@ -34,7 +45,7 @@ var CONFIG = {
     "ALICANTE":      "Dove quella notte tutto è iniziato.",
     "VALENCIA":      "La città con 360 giorni di sole l'anno, in cui noi abbiamo trovato la pioggia e ci siamo anche bruciati!",
     "SHANGHAI":      "Il più bello dei viaggi fatti insieme finora; Posto pieno di Zhongguo ren (molto bendan) in cui abbiamo scoperto gli spaghetti fantastici!",
-    "ZARAGOZA":      "All'inizio di quest'anno hai vissuto più qui che a casa tua e la tua frase preferita era \"Limpieza Potente\".",
+    "ZARAGOZA":      "All'inizio di quest'anno hai vissuto più qui che a casa tua e la tua frase preferita era \"Limpieza Potente\". Patria del KB!",
     "SCHIEPPO":      "Da quella finestra della casetta di ___ ogni mattina possiamo ammirare il Puscio in tutto il suo splendore.",
     "VERONA":        "Dopo numerose uscite, è stato il luogo in cui ci siamo conosciuti veramente ed innamorati. (In un posto di tale provincia mi hai anche sporcato la maglietta!)"
   }

@@ -177,23 +177,11 @@
     if (solved === WORDS.length && !finished) { finished = true; setTimeout(win, 350); }
   }
 
-  document.getElementById("checkBtn").addEventListener("click", function () {
-    for (var r = 0; r < ROWS; r++) for (var c = 0; c < COLS; c++) {
-      var g = grid[r][c]; if (!g) continue;
-      var v = (g.inp.value || "").toUpperCase();
-      g.el.classList.toggle("wrong", !!v && v !== g.ch);
-    }
-    board.classList.remove("shake"); void board.offsetWidth; board.classList.add("shake");
-  });
-  document.getElementById("hintBtn").addEventListener("click", function () {
-    var w = activeWord || WORDS[0];
-    var cs = cellsOf(w);
-    for (var i = 0; i < cs.length; i++) {
-      var inp = inputs[cs[i][0]][cs[i][1]];
-      if ((inp.value || "").toUpperCase() !== w.word[i]) { inp.value = w.word[i]; break; }
-    }
-    clearMarks(); update();
-  });
+  var noHint = document.getElementById("noHint");
+  document.getElementById("noHintText").textContent = CONFIG.messaggioNoLettera || "Non puoi rivelare nessuna lettera.";
+  document.getElementById("hintBtn").addEventListener("click", function () { noHint.classList.add("show"); });
+  document.getElementById("noHintClose").addEventListener("click", function () { noHint.classList.remove("show"); });
+  noHint.addEventListener("click", function (e) { if (e.target === noHint) noHint.classList.remove("show"); });
   document.getElementById("resetBtn").addEventListener("click", function () {
     for (var r = 0; r < ROWS; r++) for (var c = 0; c < COLS; c++) if (grid[r][c]) grid[r][c].inp.value = "";
     finished = false;
@@ -214,6 +202,20 @@
     setTimeout(function () { rewardEl.classList.add("show"); burst(); setTimeout(burst, 700); }, SECRET.length * 260 + 500);
   }
   document.getElementById("closeReward").addEventListener("click", function () { rewardEl.classList.remove("show"); });
+
+  /* ---- "Scopri dove" ---- */
+  var DOVE = CONFIG.scopriDove || {};
+  var leadEl = document.getElementById("rewardLead");
+  leadEl.textContent = DOVE.testo || "";
+  leadEl.hidden = !DOVE.testo;
+  var whereBtn = document.getElementById("whereBtn");
+  if (DOVE.link) {
+    whereBtn.addEventListener("click", function () { window.open(DOVE.link, "_blank", "noopener"); });
+  } else {
+    whereBtn.hidden = true;
+  }
+  var rewardTextEl = document.getElementById("rewardText");
+  if (!CONFIG.messaggioPremio) rewardTextEl.hidden = true;
 
   /* ---- benvenuto ---- */
   if (NOME) document.getElementById("who").textContent = ", " + NOME + "!"; else document.getElementById("who").textContent = "!";
