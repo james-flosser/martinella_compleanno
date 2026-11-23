@@ -26,16 +26,16 @@ var CONFIG = {
   // DEFINIZIONI: a sinistra la parola (in MAIUSCOLO, non cambiarla),
   // a destra la definizione che appare nel cruciverba. Modifica solo il testo a destra.
   definizioni: {
-    "FUERTEVENTURA": "Isola delle Canarie famosa per le dune di Corralejo e il surf",
-    "PARIGI":        "La Ville Lumière, con la Torre Eiffel affacciata sulla Senna",
-    "SHARM":         "___ el-Sheikh: la perla del Mar Rosso",
-    "MADRID":        "Capitale della Spagna",
-    "DOLO":          "Borgo della Riviera del Brenta, in provincia di Venezia",
-    "ALICANTE":      "Città della Costa Blanca dominata dal castello di Santa Bárbara",
-    "VALENCIA":      "Patria della paella e della Città delle Arti e delle Scienze",
-    "SHANGHAI":      "Metropoli cinese dallo skyline sul Bund",
-    "ZARAGOZA":      "Capoluogo dell'Aragona, bagnato dal fiume Ebro",
-    "SCHIEPPO":      "Il nostro posto del cuore, solo per noi",
-    "VERONA":        "La città dell'Arena e di Giulietta"
+    "FUERTEVENTURA": "Posto in cui mi è venuta molta spissa e tu sei diventata super marroncina.",
+    "PARIGI":        "Pangoccioli giganti, Disneyland, e \"ooooooh, les champs elysees\"!",
+    "SHARM":         "Dove si trova il \"lago magico\", che tanto magico non è stato per il tuo piede!",
+    "MADRID":        "Il tuo luogo preferito della spagna (per il cappello giallo e il Parque Warner!)",
+    "DOLO":          "Magica città della Pianura Padana in cui ti trasferiresti senza pensarci 2 volte.",
+    "ALICANTE":      "Dove quella notte tutto è iniziato.",
+    "VALENCIA":      "La città con 360 giorni di sole l'anno, in cui noi abbiamo trovato la pioggia e ci siamo anche bruciati!",
+    "SHANGHAI":      "Il più bello dei viaggi fatti insieme finora; Posto pieno di Zhongguo ren (molto bendan) in cui abbiamo scoperto gli spaghetti fantastici!",
+    "ZARAGOZA":      "All'inizio di quest'anno hai vissuto più qui che a casa tua e la tua frase preferita era \"Limpieza Potente\".",
+    "SCHIEPPO":      "Da quella finestra della casetta di ___ ogni mattina possiamo ammirare il Puscio in tutto il suo splendore.",
+    "VERONA":        "Dopo numerose uscite, è stato il luogo in cui ci siamo conosciuti veramente ed innamorati. (In un posto di tale provincia mi hai anche sporcato la maglietta!)"
   }
 };
