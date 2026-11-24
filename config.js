@@ -7,13 +7,11 @@
 var CONFIG = {
 
   // Nome della festeggiata: compare nel titolo ("Buon Compleanno, Maria!").
-  // Lascialo vuoto "" per non mostrarlo.
-  nome: "",
+  nome: "mia bella Pitufina!",
 
   // Testo sotto il titolo nella schermata di benvenuto
   testoBenvenuto:
-    "Abbiamo nascosto il tuo regalo in un cruciverba fatto di luoghi e ricordi. " +
-    "Risolvilo fino in fondo e scoprirai la sorpresa.",
+    "Scopri il tuo regalo!",
 
   // Parola segreta formata dalle lettere cerchiate (nell'ordine dei numeri dorati).
   // Deve corrispondere alle caselle indicate in schema.js.

@@ -218,7 +218,7 @@
   if (!CONFIG.messaggioPremio) rewardTextEl.hidden = true;
 
   /* ---- benvenuto ---- */
-  if (NOME) document.getElementById("who").textContent = ", " + NOME + "!"; else document.getElementById("who").textContent = "!";
+  if (NOME) document.getElementById("who").textContent = " " + NOME + "!"; else document.getElementById("who").textContent = "!";
   document.getElementById("startBtn").addEventListener("click", function () {
     document.getElementById("welcome").classList.add("hidden");
     burst();
